@@ -12,8 +12,8 @@ sudo apt-get install python-pip python-dev build-essential -y
 sudo apt-get install mininet -y
 sudo pip install scapy thrift networkx
 # Install docker
-#curl -sSL https://get.docker.com/ | sh
-#sudo docker version
+curl -sSL https://get.docker.com/ | sh
+sudo docker version
 # Install other dependencies
 sudo apt-get install python3 -y
 sudo apt-get install python3-pip -y
@@ -52,7 +52,7 @@ cd ~/protobuf/ && sudo ldconfig
 # install p4c
 sudo apt-get install g++ git automake libtool libgc-dev bison flex libfl-dev libgmp-dev libboost-dev libboost-iostreams-dev pkg-config python python-scapy python-ipaddr tcpdump cmake
 cd ~/ && git clone --recursive https://github.com/p4lang/p4c.git
-cd ~p4c/ && mkdir build
+cd ~/p4c && mkdir build
 cd ~/p4c/build/ && cmake ..
 cd ~/p4c/build/ && make -j4
 cd ~/p4c/build/ && make -j4 check
