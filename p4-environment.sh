@@ -1,6 +1,6 @@
 #!/bin/sh
-# A script to install and running Folding@Home
-# Author: Monisan Fu(@sufuf3)
+# A script to install p4 environment
+# Author: Samina Fu(@sufuf3)
 # date:20170924
 #
 # OS: Ubuntu 16.04 64-bits
