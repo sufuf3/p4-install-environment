@@ -8,6 +8,11 @@ P4 environment setting
 - Disk: at least 25G  
 
 ## Install P4 Lab
+### Quickly install
+```sh
+$ wget -O setup.sh https://goo.gl/EHgk4v && sudo bash setup.sh && wget -O - https://goo.gl/NKaau7 | bash
+```
+
 ### Using this repo's script
 -  [p4-environment.sh](https://github.com/sufuf3/p4-install-environment/blob/master/p4-environment.sh)
 ```sh
