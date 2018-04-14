@@ -64,6 +64,7 @@ sudo rm -rf $tmpdir
 cd ~/
 
 # PI/P4Runtime
+sudo apt-get install -y libjudy-dev libreadline-dev valgrind libtool-bin libboost-dev libboost-system-dev
 git clone https://github.com/p4lang/PI.git
 cd ~/PI && git checkout ${PI_COMMIT}
 cd ~/PI && git submodule update --init --recursive
