@@ -83,11 +83,11 @@ cd ~/behavioral-model && make -j${NUM_CORES}
 cd ~/behavioral-model && sudo make install
 cd ~/behavioral-model && sudo ldconfig
 # Simple_switch_grpc target
-cd ~/targets/simple_switch_grpc && ./autogen.sh
-cd ~/targets/simple_switch_grpc && ./configure
-cd ~/targets/simple_switch_grpc && make -j${NUM_CORES}
-cd ~/targets/simple_switch_grpc && sudo make install
-cd ~/targets/simple_switch_grpc && sudo ldconfig
+cd ~/behavioral-model/targets/simple_switch_grpc && ./autogen.sh
+cd ~/behavioral-model/targets/simple_switch_grpc && ./configure
+cd ~/behavioral-model/targets/simple_switch_grpc && make -j${NUM_CORES}
+cd ~/behavioral-model/targets/simple_switch_grpc && sudo make install
+cd ~/behavioral-model/targets/simple_switch_grpc && sudo ldconfig
 cd ~/
 
 # P4C
