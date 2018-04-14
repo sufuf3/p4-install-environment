@@ -2,7 +2,10 @@ P4 environment setting
 ===
 
 ## Environment
-OS: Ubuntu 16.04 64-bits
+- OS: Ubuntu 16.04 64-bits  
+- CPU: at least 2 cores  
+- RAM: at least 2G  
+- Disk: at least 25G  
 
 ## Install P4 Lab
 ### Using this repo's script
