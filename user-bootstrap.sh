@@ -64,7 +64,7 @@ cd ~/behavioral-model && git checkout ${BMV2_COMMIT}
 # Nanomsg is required by p4runtime, p4runtime is needed by BMv2...
 cd ~/behavioral-model
 tmpdir=`mktemp -d -p .`
-#cd ${tmpdir} && bash ../travis/install-thrift.sh
+cd ~/behavioral-model/ && sh install_deps.sh
 cd ~/behavioral-model/travis/ && sh install-thrift.sh
 cd ${tmpdir} && bash ../travis/install-nanomsg.sh
 cd ${tmpdir} && sudo ldconfig
