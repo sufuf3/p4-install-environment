@@ -55,7 +55,8 @@ cd ~/behavioral-model && git checkout ${BMV2_COMMIT}
 # Nanomsg is required by p4runtime, p4runtime is needed by BMv2...
 cd ~/behavioral-model
 tmpdir=`mktemp -d -p .`
-cd ${tmpdir} && bash ../travis/install-thrift.sh
+#cd ${tmpdir} && bash ../travis/install-thrift.sh
+cd ~/behavioral-model/travis/ && sh install-thrift.sh
 cd ${tmpdir} && bash ../travis/install-nanomsg.sh
 cd ${tmpdir} && sudo ldconfig
 cd ${tmpdir} && bash ../travis/install-nnpy.sh
@@ -64,7 +65,7 @@ sudo rm -rf $tmpdir
 cd ~/
 
 # PI/P4Runtime
-sudo apt-get install -y libjudy-dev libreadline-dev valgrind libtool-bin libboost-dev libboost-system-dev
+sudo apt-get install -y libjudy-dev libreadline-dev valgrind libtool-bin libboost-dev libboost-system-dev libnanomsg-dev
 git clone https://github.com/p4lang/PI.git
 cd ~/PI && git checkout ${PI_COMMIT}
 cd ~/PI && git submodule update --init --recursive
