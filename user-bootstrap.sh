@@ -19,6 +19,8 @@ cd ~/mininet && sudo ./util/install.sh -nwv
 cd ~/
 
 # Protobuf
+# Install protobuf
+sudo apt-get install autoconf automake libtool curl make g++ unzip
 git clone https://github.com/google/protobuf.git
 cd ~/protobuf && git checkout ${PROTOBUF_COMMIT}
 export CFLAGS="-Os"
