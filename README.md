@@ -19,9 +19,9 @@ $ wget -O - https://goo.gl/NUA5p8 | bash
 ```
 > Haven't tested yet
 
-- user-bootstrap.sh
+- Rewirited [user-bootstrap.sh](https://github.com/sufuf3/p4-install-environment/blob/master/user-bootstrap.sh)
 ```sh
-$ wget -O - https://goo.gl/z5YYuZ | bash
+$ wget -O - https://goo.gl/NKaau7 | bash
 ```
 > Test OK
 
