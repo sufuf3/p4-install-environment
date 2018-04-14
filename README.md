@@ -6,17 +6,18 @@ OS: Ubuntu 16.04 64-bits
 
 ## Install P4 Lab
 ### Using this repo's script
-- ✅ [p4-environment.sh](https://github.com/sufuf3/p4-install-environment/blob/master/p4-environment.sh)
+-  [p4-environment.sh](https://github.com/sufuf3/p4-install-environment/blob/master/p4-environment.sh)
 ```sh
 $ wget -O - https://goo.gl/pNmWbS | bash
 ```
+> This setup script finished in Sep 2017. However, the env meet p4c-bm2-ss compile failed. Wait for fixing.
 
 ### Using [P4 tutorials](https://github.com/p4lang/tutorials/tree/master/P4D2_2018_East/vm)
 - root-bootstrap.sh
 ```sh
 $ wget -O - https://goo.gl/NUA5p8 | bash
 ```
-> Haven't tested yet
+> Haven't tested yet.(Refer to user-bootstrap.sh, some dependencies need to install first, when you exec the script. Need to rewrite.)
 
 - ✅ Rewirited [user-bootstrap.sh](https://github.com/sufuf3/p4-install-environment/blob/master/user-bootstrap.sh)
 ```sh
