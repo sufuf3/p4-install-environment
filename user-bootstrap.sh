@@ -51,7 +51,7 @@ sudo pip install grpcio
 sudo apt-get install g++ git automake libtool libgc-dev bison flex libfl-dev libgmp-dev libboost-dev libboost-iostreams-dev pkg-config python python-scapy python-ipaddr tcpdump cmake linux-generic-lts-vivid libssl-dev -y
 sudo apt-get install python-pip python-dev build-essential -y
 sudo pip install --upgrade pip
-sudo pip install scapy thrift networkx
+sudo pip install scapy thrift networkx psutil
 # Install other dependencies
 sudo apt-get install python3 -y
 sudo apt-get install python3-pip -y
