@@ -49,6 +49,15 @@ sudo pip install grpcio
 
 # BMv2 deps (needed by PI)
 sudo apt-get install g++ git automake libtool libgc-dev bison flex libfl-dev libgmp-dev libboost-dev libboost-iostreams-dev pkg-config python python-scapy python-ipaddr tcpdump cmake linux-generic-lts-vivid libssl-dev -y
+sudo apt-get install python-pip python-dev build-essential -y
+sudo pip install --upgrade pip
+sudo pip install scapy thrift networkx
+# Install other dependencies
+sudo apt-get install python3 -y
+sudo apt-get install python3-pip -y
+sudo apt-get install bridge-utils -y
+sudo pip3 install scapy-python3
+sudo pip3 install websockets
 git clone https://github.com/p4lang/behavioral-model.git
 cd ~/behavioral-model && git checkout ${BMV2_COMMIT}
 # From bmv2's install_deps.sh, we can skip apt-get install.
