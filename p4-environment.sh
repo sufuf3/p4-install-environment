@@ -21,7 +21,8 @@ sudo apt-get install bridge-utils -y
 sudo pip3 install scapy-python3
 sudo pip3 install websockets
 # install bmv2: P4 software switch (aka behavioral model)
-cd ~/ && git clone https://github.com/p4lang/behavioral-model.git bmv2
+
+cd ~/ && mv -r bmv2 bmv2.bkg && git clone https://github.com/p4lang/behavioral-model.git bmv2
 cd ~/bmv2/ && sh install_deps.sh
 cd ~/bmv2/travis/ && sh install-nanomsg.sh
 cd ~/bmv2/travis/ && sh install-thrift.sh
@@ -33,16 +34,16 @@ cd ~/bmv2/ && sudo make install
 sudo ldconfig
 
 # p4c-bm: Generates the JSON configuration for the behavioral-model (bmv2)
-cd ~/ && git clone https://github.com/p4lang/p4c-bm.git p4c-bmv2
+cd ~/ && mv -r p4c-bmv2 p4c-bmv2.bkg && git clone https://github.com/p4lang/p4c-bm.git p4c-bmv2
 cd ~/p4c-bmv2/ && sudo pip install -r requirements.txt
 cd ~/p4c-bmv2/ && sudo python setup.py install
 
 # Install P4 language tutorials repo
-cd ~/ && git clone https://github.com/p4lang/tutorials.git
+cd ~/ && mv -r tutorials tutorials.bkg && git clone https://github.com/p4lang/tutorials.git
 
 # Install protobuf
 sudo apt-get install autoconf automake libtool curl make g++ unzip
-cd ~/ && git clone https://github.com/google/protobuf.git
+cd ~/ && mv -r protobuf protobuf.bkg && git clone https://github.com/google/protobuf.git
 cd ~/protobuf/ && ./autogen.sh
 cd ~/protobuf/ && ./configure
 cd ~/protobuf/ && make
@@ -51,7 +52,7 @@ cd ~/protobuf/ && sudo ldconfig
 
 # install p4c
 sudo apt-get install g++ git automake libtool libgc-dev bison flex libfl-dev libgmp-dev libboost-dev libboost-iostreams-dev pkg-config python python-scapy python-ipaddr tcpdump cmake
-cd ~/ && git clone --recursive https://github.com/p4lang/p4c.git
+cd ~/ && mv -r p4c p4c.bkg && git clone --recursive https://github.com/p4lang/p4c.git
 cd ~/p4c && mkdir build
 cd ~/p4c/build/ && cmake ..
 cd ~/p4c/build/ && make -j4
